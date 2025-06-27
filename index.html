@@ -8,24 +8,95 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" />
+
     <title>Bexon</title>
   </head>
   <body>
     <div class="hedar container">
       <img src="./img/logo.webp" alt="" />
-      <ul class="hedar-menu">
-        <li><a href="">Home</a></li>
-        <li>
-          <a href="">Pages <i class="fa-solid fa-caret-down"></i></a>
+      <ul class="header-menu">
+        <li class="dropdown">
+          <a href="#">Home</a>
         </li>
-        <li>
-          <a href="">Services <i class="fa-solid fa-caret-down"></i></a>
+        <li class="dropdown">
+          <a href="#"
+            >Pages
+            <svg
+              class="nav-drop-svg"
+              width="20px"
+              height="20px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7 10L12 15L17 10"
+                stroke="currentColor"
+                stroke-width="2.4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </a>
+          <ul class="dropdown-content">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
         </li>
-        <li><a href="">Portfolio</a></li>
-        <li>
-          <a href="">Blog <i class="fa-solid fa-caret-down"></i></a>
+        <li class="dropdown">
+          <a href="#"
+            >Services
+            <svg
+              class="nav-drop-svg"
+              width="20px"
+              height="20px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7 10L12 15L17 10"
+                stroke="currentColor"
+                stroke-width="2.4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </a>
+          <ul class="dropdown-content">
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Development</a></li>
+            <li><a href="#">Marketing</a></li>
+          </ul>
         </li>
-        <li><a href="">Contact</a></li>
+        <li class="dropdown"><a href="#">Portfolio</a></li>
+        <li class="dropdown">
+          <a href="#"
+            >Blog
+            <svg
+              class="nav-drop-svg"
+              width="20px"
+              height="20px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7 10L12 15L17 10"
+                stroke="currentColor"
+                stroke-width="2.4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </a>
+          <ul class="dropdown-content">
+            <li><a href="#">Latest Posts</a></li>
+            <li><a href="#">Categories</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a href="#">Contact</a></li>
       </ul>
 
       <div class="hedar-items">
@@ -34,9 +105,9 @@
         </div>
 
         <button class="item-btn">
-          Let's Talk
-          <span class="arrow-circle">
-            <i class="fas fa-arrow-up-right-from-square"></i>
+          <h4>Let's Talk</h4>
+          <span class="erro">
+            <i class="fa-solid fa-arrow-right"></i>
           </span>
         </button>
         <a href="#myModal" class="open-button hemburgur">
@@ -52,12 +123,12 @@
               satisfaction & loyalty of our expansion recognized by industry
               leaders.
             </p>
-            <h1>Search Now!</h1>
+            <h5>Search Now!</h5>
             <div class="hem-serch">
               <input type="search" placeholder=" Search here..." />
               <i class="fa-solid fa-magnifying-glass fa-2x"></i>
             </div>
-            <h1 class="hem-con">Contact Info</h1>
+            <h5 class="hem-con">Contact Info</h5>
             <div class="contect-item">
               <span>Phone</span><br />
               <a href="">808-909-1313</a>
@@ -70,17 +141,38 @@
               <span>Location</span><br />
               <a href="">993 Renner Burg, West Rond, MT 94251-030</a>
             </div>
-            <h1 class="hem-h5">Follow Us</h1>
+            <h5 class="hem-h5">Follow Us</h5>
             <div class="ham-footer">
               <i class="fa-brands fa-facebook fa-2x"></i>
               <i class="fa-brands fa-instagram fa-2x"></i>
               <i class="fa-brands fa-x-twitter fa-2x"></i>
               <i class="fa-brands fa-linkedin fa-2x"></i>
             </div>
-            <a href="#" class="close-button">×</a>
+            <a href="#" class="close-button"><i class="fa-solid fa-x"></i></a>
           </div>
         </div>
       </div>
     </div>
+    <!-- <div id="serch" class="serch-teb container">
+      <div class="serch-demo">
+          <input type="search" placeholder="Type Word Hit The Enter ">
+         <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+      </div> 
+    </div> -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const modal = document.getElementById("myModal");
+        const modalContent = modal.querySelector(".modal-content");
+        document.addEventListener("click", function (event) {
+          // Check if modal is open via :target (hash in URL)
+          if (location.hash === "#myModal") {
+            // If click is outside modal-content, close modal
+            if (!modalContent.contains(event.target)) {
+              window.location.hash = ""; // Closes modal
+            }
+          }
+        });
+      });
+    </script>
   </body>
 </html>
