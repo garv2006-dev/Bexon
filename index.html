@@ -118,21 +118,25 @@
         <div id="myModal" class="modal">
           <div class="modal-content">
             <img src="./img/logo-2.webp" alt="" />
-            <div class="modal-menu">
-              <ul class="header-menu">
-                <li class="dropdown">
-                  <a href="#">Home</a>
+            <div class="accordion-nav">
+              <ul class="accordion-list">
+                <li class="accordion-item">
+                  <label for="acc-home" class="accordion-label"> Home </label>
                 </li>
-                <li class="dropdown">
-                  <a href="#"
-                    >Pages
+                <li class="accordion-item">
+                  <input
+                    type="checkbox"
+                    id="acc-pages"
+                    class="accordion-toggle"
+                    hidden
+                  />
+                  <label for="acc-pages" class="accordion-label">
+                    Pages
                     <svg
-                      class="nav-drop-svg"
-                      width="20px"
-                      height="20px"
+                      class="accordion-icon"
+                      width="20"
+                      height="20"
                       viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
                         d="M7 10L12 15L17 10"
@@ -140,25 +144,32 @@
                         stroke-width="2.4"
                         stroke-linecap="round"
                         stroke-linejoin="round"
-                      ></path>
+                      />
                     </svg>
-                  </a>
-                  <ul class="dropdown-content">
-                    <li><a href="#">About</a></li>
+                  </label>
+                  <ul class="accordion-content">
+                    <li><a href="#">About Us</a></li>
                     <li><a href="#">Team</a></li>
+                    <li><a href="#">Team Details</a></li>
                     <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Pricing Page</a></li>
+                    <li><a href="#">Error 404</a></li>
                   </ul>
                 </li>
-                <li class="dropdown">
-                  <a href="#"
-                    >Services
+                <li class="accordion-item">
+                  <input
+                    type="checkbox"
+                    id="acc-services"
+                    class="accordion-toggle"
+                    hidden
+                  />
+                  <label for="acc-services" class="accordion-label">
+                    Services
                     <svg
-                      class="nav-drop-svg"
-                      width="20px"
-                      height="20px"
+                      class="accordion-icon"
+                      width="20"
+                      height="20"
                       viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
                         d="M7 10L12 15L17 10"
@@ -166,26 +177,33 @@
                         stroke-width="2.4"
                         stroke-linecap="round"
                         stroke-linejoin="round"
-                      ></path>
+                      />
                     </svg>
-                  </a>
-                  <ul class="dropdown-content">
-                    <li><a href="#">Web Design</a></li>
-                    <li><a href="#">Development</a></li>
-                    <li><a href="#">Marketing</a></li>
+                  </label>
+                  <ul class="accordion-content">
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Services Details</a></li>
                   </ul>
                 </li>
-                <li class="dropdown"><a href="#">Portfolio</a></li>
-                <li class="dropdown">
-                  <a href="#"
-                    >Blog
+                <li class="accordion-item">
+                  <label for="acc-portfolio" class="accordion-label">
+                    Portfolio
+                  </label>
+                </li>
+                <li class="accordion-item">
+                  <input
+                    type="checkbox"
+                    id="acc-blog"
+                    class="accordion-toggle"
+                    hidden
+                  />
+                  <label for="acc-blog" class="accordion-label">
+                    Blog
                     <svg
-                      class="nav-drop-svg"
-                      width="20px"
-                      height="20px"
+                      class="accordion-icon"
+                      width="20"
+                      height="20"
                       viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
                         d="M7 10L12 15L17 10"
@@ -193,15 +211,17 @@
                         stroke-width="2.4"
                         stroke-linecap="round"
                         stroke-linejoin="round"
-                      ></path>
+                      />
                     </svg>
-                  </a>
-                  <ul class="dropdown-content">
-                    <li><a href="#">Latest Posts</a></li>
-                    <li><a href="#">Categories</a></li>
+                  </label>
+                  <ul class="accordion-content">
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Blog Details</a></li>
                   </ul>
                 </li>
-                <li class="dropdown"><a href="#">Contact</a></li>
+                <li class="accordion-item no-submenu">
+                  <a href="#" class="accordion-label">Contact</a>
+                </li>
               </ul>
             </div>
             <p>

@@ -431,9 +431,10 @@ ul.header-menu {
   font-weight: 200;
 }
 
-.modal-menu {
+.accordion-nav {
   display: none;
 }
+
 .hem-serch i {
   position: absolute;
   cursor: pointer;
@@ -540,17 +541,20 @@ ul.header-menu {
   .item-btn {
     display: none;
   }
-  .modal{
+
+  .modal {
     margin-top: 30px;
     margin-right: 6px;
   }
-  .modal-content p,h5,input,.hem-serch i{
+
+  .modal-content p,
+  h5,
+  input,
+  .hem-serch i {
     display: none;
   }
-  .header-menu{
-    display: block;
-  }
-  
+
+
 }
 
 @media (max-width: 768px) {
@@ -566,14 +570,84 @@ ul.header-menu {
     display: none;
   }
 
-  /* .modal {
-    position: fixed;
-    top: -20px;
-    right: -120%;
-    width: 500px;
-    height: 90%;
-    margin: 40px;
-    padding-left: 20px;
+  .accordion-nav {
+    width: 100%;
+    display: block;
+  }
+
+  .accordion-list {
+    list-style: none;
+  }
+
+  .accordion-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* .accordion-label:hover {
+  background: #E6F2F2;
+} */
+  .accordion-icon {
+    transition: transform 0.3s ease;
+  }
+  /* Hide content by default */
+  .accordion-content {
+    max-height: 0;
     overflow: hidden;
-  } */
+    list-style: none;
+    transition: max-height 0.4s ease;
+    padding-left: 50px;
+  }
+
+  .accordion-content ul li a {
+    list-style: none;
+  }
+
+  .accordion-content li {
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .accordion-content li a {
+    padding-bottom: 5px;
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+  }
+
+  /* Show content when checked */
+  .accordion-toggle:checked+.accordion-label+.accordion-content {
+    max-height: 500px;
+    /* enough height for all items */
+  }
+
+  /* Rotate icon when open */
+  .accordion-toggle:checked+.accordion-label .accordion-icon {
+    transform: rotate(180deg);
+  }
+
+  /* For items without submenus */
+  .no-submenu .accordion-label {
+    padding-right: 20px;
+    text-decoration: none;
+  }
+
+  .contect-item{
+    padding-left:20px ;
+  }
+  .ham-footer{
+    padding-left: 20px;
+  }
+
+
+
+
 }
