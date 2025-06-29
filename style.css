@@ -239,11 +239,6 @@ ul.header-menu {
   transition: transform 0.3s ease;
 }
 
-/* Move circle slightly right */
-/* .item-btn:hover .erro {
-  transform: translateX(6px);
-} */
-/* Rotate arrow icon from :arrow_upper_right: to → */
 .item-btn .erro i {
   font-size: 16px;
   transform: rotate(-45deg);
@@ -665,15 +660,85 @@ ul.header-menu {
 
 .secand-1 {
   width: 100%;
-  background: #0D1D1D;
+  background: rgb(0 0 0 / 75%);
   color: #A9B8B8;
   border-radius: 12px;
+  padding: 70px 40px 70px 50px;
+  /* text-align: justify; */
+  justify-content: center;
 }
-.secand-1-top svg{
-   width:30px ;
-   height: 30px;
-   /* background: #000; */
-   color: #fff;
+
+.secand-1-top svg {
+  width: 30px;
+  height: 30px;
+  color: #fff;
+}
+
+.secand-1-top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 1px dotted #fff;
+  left: 40px;
+  padding: 6px 10px 6px 10px;
+  margin-bottom: 20px;
+
+}
+
+.secand-1-top h3 {
+  font-size: 13px;
+}
+
+
+.secand-1 h1 {
+  font-size: 60px;
+  font-weight: 430;
+  color: #fff;
+}
+
+.secand-1 span {
+  color: #1e8a8a;
+}
+
+.secand-1-bottom {
+  display: flex;
+  align-items: center;
+  padding: 23px 0;
+  margin-top: 40px;
+  margin-right: 20px;
+  border-top: 1px dotted #ecf0f0;
+  border-bottom: 1px dotted #ecf0f0;
+}
+
+.animetion {
+  display: inline-flex;
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 15px;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.animetion svg {
+
+  transition: transform 0.4s ease;
+}
+
+.animetion:hover svg {
+  transform: rotate(0deg);
+}
+
+.animetion svg {
+  width: 70px;
+  height: 70px;
+}
+
+.secand-1-bottom p {
+  border-left: 1px dotted #ecf0f0;
+  font-size: 17px;
+  padding-left: 44px;
 }
 
 .secand-2 {
@@ -692,12 +757,8 @@ ul.header-menu {
   height: 250px;
   background: #fff;
   padding: 30px 25px;
-
   border-radius: 12px;
   /* border: 1.7rem solid #ecf0f0; */
-
-
-
 }
 
 .border-top-right {
@@ -722,8 +783,8 @@ ul.header-menu {
   margin-bottom: 30px;
 }
 
-.image-icon{
-  width:50px ;
+.image-icon {
+  width: 50px;
   height: 50px;
   background: #1e8a8a;
   border-radius: 30px;
@@ -732,6 +793,7 @@ ul.header-menu {
   justify-content: center;
   color: #fff;
 }
+
 .secand-2-ph h2 {
   font-size: 50px;
   margin-bottom: 15px;
@@ -768,4 +830,137 @@ ul.header-menu {
   background-image: url("data:image/svg+xml,%3Csvg%20viewBox%3D'0%200%2011%2011'%20fill%3D'none'%20xmlns%3D'http%3A//www.w3.org/2000/svg'%3E%3Cpath%20d%3D'M11%200L0%200V11C0%204.92487%204.92487%200%2011%200Z'%20fill%3D'%23ecf0f0'/%3E%3C/svg%3E");
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 480px) {
+  .secand-1-top h1 {
+    font-size: 25px;
+    font-weight: 300;
+    color: #fff;
+  }
+}
+
+@media (max-width: 768px) {
+  .secand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .secand-1-top h1 {
+    font-size: 26px;
+    color: #fff;
+  }
+}
+
+
+/* =====================  center style   ================================ */
+
+.center {
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
+
+.secand-hedar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: 1.5px dotted #b8bec1;
+  margin-bottom: 20px;
+
+
+}
+
+.secand-hedar svg {
+  width: 25px;
+  height: 23px;
+}
+
+.secand-hedar h3 {
+  font-size: 25px;
+  font-weight: 235px;
+}
+
+.center h2 {
+  font-size: 55px;
+  font-weight: 450;
+  margin-bottom: 52px;
+  /* margin-left: 283px;
+  margin-right: 283px; */
+  text-align: center;
+}
+
+.center span {
+  color: #1e8a8a;
+}
+
+
+/* card style */
+.card-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* justify-content: space-evenly;
+    gap: 1.5rem; */
+}
+
+.card-container {
+  padding: 20px;
+  width: 33%;
+  height: auto;
+
+}
+
+.card-container .card {
+  border: 1px solid #ccc;
+  height: auto;
+  padding: 40px 20px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.card i {
+  margin-bottom: 30px;
+}
+
+.card h1 {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.card p {
+  /* margin-bottom: 30px; */
+  font-size: 16px;
+}
+
+/* ======================midiya query center=============================== */
+
+@media (max-width: 480px) {
+  .center h2 {
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 52px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .center h2 {
+    font-size: 35px;
+    font-weight: 350;
+    margin-bottom: 52px;
+    text-align: center;
+  }
+
+  .card-main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-container {
+    width: 100%;
+    margin-bottom: 0px;
+  }
 }
