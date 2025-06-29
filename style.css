@@ -833,10 +833,8 @@ ul.header-menu {
 }
 
 @media (max-width: 480px) {
-  .secand-1-top h1 {
-    font-size: 25px;
-    font-weight: 300;
-    color: #fff;
+  .secand-1 h1 {
+    font-size: 2.4rem;
   }
 }
 
@@ -848,9 +846,16 @@ ul.header-menu {
     justify-content: center;
   }
 
-  .secand-1-top h1 {
-    font-size: 26px;
-    color: #fff;
+  .secand-1  h1  {
+    font-size: 3rem;
+  }
+
+  .secand-1-bottom p{
+    font-size:16px;
+  } 
+  .animetion{
+    width:100px ;
+    height: 60px;
   }
 }
 
