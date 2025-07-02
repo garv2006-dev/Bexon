@@ -662,7 +662,7 @@ ul.header-menu {
 
 .secand-1 {
   width: 100%;
-  background: rgb(0 0 0 / 75%);
+  background: #0c1e21;
   color: #A9B8B8;
   border-radius: 12px;
   padding: 70px 40px 70px 50px;
@@ -1908,6 +1908,8 @@ ul.header-menu {
   opacity: 1;
 }
 
+/* ==========================media query============================== */
+
 @media (max-width: 480px) {
   .ditels-hader h2 {
     font-size: 30px;
@@ -1915,6 +1917,10 @@ ul.header-menu {
     color: #fff;
     text-align: center;
     margin-top: 10px;
+  }
+
+  .ditels {
+    padding: 0;
   }
 }
 
@@ -1928,14 +1934,145 @@ ul.header-menu {
     flex: 0 0 auto;
   }
 
-  .ditels {
-    padding: 70px 0;
-  }
+
   .ditels-top {
-  background: #000;
-  margin-left: 15px;
-  margin-right: 15px;
-  padding-top: 70px;
-  border-radius: 9px;
+    background: #000;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 70px;
+    border-radius: 9px;
+  }
 }
+
+/* ========================== portfolio style ============================== */
+
+.portfolio{
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
+.portfolio-main{
+  margin-left:30px ;
+  margin-right: 30px;
+}
+.portfolio-m-text .portfolio-hedar-1 {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  border: 1.5px dotted #1e8a8a;
+  padding: 2px 10px;
+  text-align: justify;
+  gap: 14px;
+  width: fit-content;
+  margin-bottom: 20px;
+
+}
+
+.portfolio-m-text svg{
+  width: 25px;
+  height: 23px;
+}
+
+.div1-hedar-1 h3 {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.portfolio-m-text h2 {
+  font-size: 48px;
+  font-weight: 500;
+  /* margin-bottom: 20px; */
+}
+.portfolio-m-text p {
+  font-size: 16px;
+  font-weight: 400;
+
+}
+
+.portfolio-m-text span {
+  color: #1e8a8a;
+}
+
+.portfolio-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 5px 15px;
+  /* background: #1e8a8a; */
+  color: transparent;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-transform: capitalize;
+  overflow: hidden;
+  /* box-shadow: 0 8px 20px rgba(33, 139, 140, 0.25); */
+}
+
+/* Original text (slides up on hover) */
+.portfolio-btn::after {
+  content: "More Projects";
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 1;
+  color: black;
+  font-weight: 600;
+  font-size: 16px;
+  white-space: nowrap;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* New text (comes in from bottom) */
+.portfolio-btn::before {
+  content: "More Projects";
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(100%);
+  opacity: 0;
+  color: black;
+  font-weight: 600;
+  font-size: 16px;
+  white-space: nowrap;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+
+/* Hover effects */
+.portfolio-btn:hover::after {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.portfolio-btn:hover::before {
+  transform: translateY(-50%);
+  opacity: 1;
+}
+
+/* Arrow circle styling */
+.portfolio-btn.arew {
+  display: inline-flex;
+  background-color: #000;
+  color: #fff;
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-btn .arew i {
+  font-size: 16px;
+  transform: rotate(-45deg);
+  transition: transform 0.4s ease;
+}
+
+.portfolio-btn:hover .arew i {
+  transform: rotate(0deg);
 }
