@@ -2760,7 +2760,7 @@ ul.header-menu {
 
 @media (max-width: 480px) {
   .blog {
-    padding: 0px 16px;
+    padding: 0px 0px;
   }
 
   .blog-main-hedar-name h2 {
@@ -2779,13 +2779,9 @@ ul.header-menu {
 
   .blog-container .blog-main {
     padding: 10px 10px 30px 10px;
-    margin: 0 0;
+    margin: 0 10px;
     border-radius: 12px;
     overflow: hidden;
-  }
-
-  .container {
-    padding: 0;
   }
 
   .card-cantenar {
