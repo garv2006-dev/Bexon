@@ -874,6 +874,7 @@ ul.header-menu {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   gap: 5px;
   margin-bottom: 20px;
   width: 100%;
@@ -915,13 +916,12 @@ ul.header-menu {
 .card-main {
   display: flex;
   align-items: center;
-  justify-content: center;
-  /* justify-content: space-evenly;
-    gap: 1.5rem; */
+  justify-content: space-between;
+  gap: 1.5rem;
 }
 
 .card-container {
-  padding: 20px;
+  /* padding: 20px; */
   width: 33%;
   height: auto;
 
@@ -963,8 +963,18 @@ ul.header-menu {
   .center h2 {
     font-size: 30px;
     font-weight: 300;
-    margin-bottom: 52px;
-    text-align: center;
+    margin-bottom: 0px;
+
+  }
+
+  .secand-hedar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    /* gap: 5px; */
+    margin-bottom: 0px;
+    width: 100%;
   }
 
   .center {
@@ -976,7 +986,7 @@ ul.header-menu {
   .center h2 {
     font-size: 35px;
     font-weight: 300;
-    margin-bottom: 52px;
+    margin-bottom: 0px;
     text-align: center;
   }
 
@@ -1160,8 +1170,8 @@ ul.header-menu {
 }
 
 .row {
-  margin: 0 45px;
-  padding: 0 10px;
+  /* margin: 0 45px; */
+  /* padding: 0 10px; */
   display: flex;
   justify-content: center;
   gap: 15px;
@@ -1938,8 +1948,8 @@ ul.header-menu {
 
   .ditels-top {
     background: #000;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
     padding-top: 70px;
     padding-bottom: 70px;
     border-radius: 9px;
@@ -2294,6 +2304,13 @@ ul.header-menu {
     align-items: flex-start;
     text-align: justify;
 
+  }
+
+  .portfolio-main {
+    /* margin-left: 40px;
+  margin-right: 40px; */
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .portfolio-m-img {
@@ -2841,4 +2858,15 @@ ul.header-menu {
     overflow-x: auto;
   }
 
+  .blog-container .blog-main {
+    padding: 10px 10px 30px 10px;
+    margin: 0 10px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .card-cantenar {
+    margin: 0 10px;
+    overflow-x: auto;
+  }
 }
