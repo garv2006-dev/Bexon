@@ -1216,15 +1216,6 @@ ul.header-menu {
   position: absolute;
 }
 
-/* .secand-2-ph img {
-  width: fit-content;
-  height: 50px;
-
-} */
-
-
-
-
 .row-2-ph h2 {
   font-size: 50px;
   /* margin-bottom: 15px; */
@@ -2868,5 +2859,253 @@ ul.header-menu {
   .card-cantenar {
     margin: 0 10px;
     overflow-x: auto;
+  }
+}
+
+
+/* ============================== faq-section ================================ */
+.faq-section {
+  padding: 120px 0;
+}
+
+.center-row-1 {
+  width: 100%;
+  position: relative;
+}
+
+.faq-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.center-row-1 img {
+  width: 100%;
+  max-height: 680px;
+  height: 100%;
+  border-radius: 1.5rem;
+  position: relative;
+}
+
+.title-hedar-of {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  z-index: 10;
+}
+
+.title-hedar-of h3 {
+  font-size: 38px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+}
+
+.center-row-ph {
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  position: relative;
+}
+
+.center-row-ph .center-row-text {
+  font-size: 22px;
+  font-weight: 200;
+  color: #1e8a8a;
+}
+
+.center-row-laft {
+  background-color: #ecf0f0;
+  border-top: 15px solid #ecf0f0;
+  border-left: 15px solid #ecf0f0;
+  border-top-right-radius: 10px;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.center-row-ph h2 {
+  font-size: 50px;
+  padding-top: 25px;
+  padding-bottom: 13px;
+}
+
+.center-row-ph p {
+  font-size: 18px;
+  color: #567373;
+}
+
+/* .center-row-ph::before {
+  content: "";
+  position: absolute;
+  right: -28px;
+  top: 0;
+  width: 13px;
+  height: 13px;
+  transform: rotate(-120deg);
+  z-index: 10000;
+  background-image: url("data:image/svg+xml,%3Csvg%20viewBox%3D'0%200%2011%2011'%20fill%3D'none'%20xmlns%3D'http%3A//www.w3.org/2000/svg'%3E%3Cpath%20d%3D'M11%200L0%200V11C0%204.92487%204.92487%200%2011%200Z'%20fill%3D'%23ecf0f0'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.center-row-ph::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -35px;
+  width: 13px;
+  height: 13px;
+  transform: rotate(-30deg);
+  z-index: 10000;
+  background-image: url("data:image/svg+xml,%3Csvg%20viewBox%3D'0%200%2011%2011'%20fill%3D'none'%20xmlns%3D'http%3A//www.w3.org/2000/svg'%3E%3Cpath%20d%3D'M11%200L0%200V11C0%204.92487%204.92487%200%2011%200Z'%20fill%3D'%23ecf0f0'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+} */
+
+.center-row-2 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.dropdown-row-2 {
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.dropdown-row-2 input[type="checkbox"] {
+  display: none;
+}
+
+.dropdown-label-hedar {
+  background-color: #fff;
+  color: #000;
+  padding: 27px 12px;
+  cursor: pointer;
+  display: flex;
+  font-size: 18px;
+  font-weight: 600;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px 8px 8px 8px;
+}
+
+.dropdown-label-hedar::after {
+  content: "\2193";
+  font-size: 14px;
+  transition: transform 0.3s ease;
+  border-radius: 8px 8px 0 0;
+}
+
+.dropdown-label-hedar:hover {
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+}
+
+.dropdown-row-2 input[type="checkbox"]:checked+.dropdown-label-hedar::after {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu-text {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 0;
+  font-size: 16px;
+  font-weight: 400;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 0 0 8px 8px;
+  transition: max-height 0.4s ease;
+}
+
+.dropdown-row-2 input[type="checkbox"]:checked~.dropdown-menu-text {
+  max-height: 500px;
+}
+
+.dropdown-menu-text li {
+  padding: 12px 16px;
+  border-top: 1px solid #ccc;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+  .faq-center {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .center-row-1 img {
+    max-height: 350px;
+    height: auto;
+  }
+
+  .center-row-ph {
+    padding: 18px 10px;
+  }
+
+  .title-hedar-of h3 {
+    font-size: 28px;
+    font-weight: 600;
+  }
+
+  .center-row-ph h2 {
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .center-row-ph p {
+    font-size: 15px;
+  }
+
+  .center-row-ph .center-row-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-section {
+    padding: 40px 0;
+  }
+
+  .center-row-ph {
+    padding: 10px 6px;
+  }
+
+  .center-row-ph h2 {
+    font-size: 22px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+
+  .title-hedar-of h3 {
+    font-size: 25px;
+    font-weight: 400;
+  }
+  .center-row-ph p {
+    font-size: 13px;
+  }
+
+  .center-row-ph .center-row-text {
+    font-size: 13px;
+  }
+
+  .dropdown-label-hedar {
+    font-size: 15px;
+    padding: 18px 8px;
+  }
+
+  .dropdown-menu-text li {
+    font-size: 13px;
+    padding: 10px 10px;
   }
 }
