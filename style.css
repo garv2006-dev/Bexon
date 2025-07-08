@@ -963,7 +963,7 @@ ul.header-menu {
   .center h2 {
     font-size: 30px;
     font-weight: 300;
-    margin-bottom: 0px;
+    margin-bottom: px;
 
   }
 
@@ -973,7 +973,7 @@ ul.header-menu {
     flex-direction: column;
     justify-content: center;
     /* gap: 5px; */
-    margin-bottom: 0px;
+    margin-bottom: 20px;
     width: 100%;
   }
 
@@ -2449,9 +2449,14 @@ ul.header-menu {
 }
 
 @media (max-width: 768px) {
+  .tj-countup-section {
+    transform: translateY(30%);
+  }
+
   .countup-wrap {
     display: grid;
     grid-template-columns: 1fr 1fr;
+
     /* gap: 20px; */
   }
 
@@ -2971,7 +2976,7 @@ ul.header-menu {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 20px;
+  /* gap: 20px; */
 }
 
 .dropdown-row-2 {
@@ -3403,7 +3408,18 @@ ul.header-menu {
     display: block;
     margin: 0 auto;
   }
+  .location-tooltip {
+    top: 0px;
+    left: 0px;
+    width: 100px;
+    font-size: 13px;
+    padding: 12px;
+  }
 
+  .location-indicator {
+    width: 16px;
+    height: 16px;
+  }
   .loc-1 {
     top: 30%;
     left: 60%;
@@ -3786,7 +3802,7 @@ ul.header-menu {
 
 @media (max-width: 480px) {
   .six-text-cp {
-    padding-bottom: 80px;
+    padding-bottom: 40px;
   }
 
   .six-heading {
@@ -3829,7 +3845,7 @@ ul.header-menu {
 
 @media (max-width: 480px) {
   .six-text-cp {
-    padding-bottom: 80px;
+    padding-bottom: 40px;
   }
 
   .six-text-container {
@@ -4294,8 +4310,8 @@ ul.header-menu {
 @media (max-width: 768px) {
   .footer-container {
     padding-top: 60px;
-    padding-left: 10px;
-    padding-right: 10px;
+    /* padding-left: 10px;
+    padding-right: 10px; */
     width: 100%;
   }
 
@@ -4337,8 +4353,8 @@ ul.header-menu {
 @media (max-width: 480px) {
   .footer-container {
     padding-top: 30px;
-    padding-left: 4px;
-    padding-right: 4px;
+    /* padding-left: 4px;
+    padding-right: 4px; */
     border-radius: 6px;
   }
 
