@@ -836,10 +836,11 @@ ul.header-menu {
 @media (max-width: 480px) {
   .secand-1 h1 {
     font-size: 2.4rem;
-    
+
   }
-  .secand-1{
-    padding: 20px ;
+
+  .secand-1 {
+    padding: 20px;
   }
 }
 
@@ -850,7 +851,8 @@ ul.header-menu {
     align-items: center;
     justify-content: center;
   }
-  .secand-1{
+
+  .secand-1 {
     padding: 20px;
   }
 
@@ -983,6 +985,12 @@ ul.header-menu {
     width: 100%;
   }
 
+  .card i{
+    font-size: 5rem;
+    /* You can change 10rem to any size like 100px, 5em, etc. */
+    /* color: gold; */
+    /* Optional: change icon color */
+  }
 
 
   .center {
@@ -3414,6 +3422,7 @@ ul.header-menu {
     display: block;
     margin: 0 auto;
   }
+
   .location-tooltip {
     top: 0px;
     left: 0px;
@@ -3426,6 +3435,7 @@ ul.header-menu {
     width: 16px;
     height: 16px;
   }
+
   .loc-1 {
     top: 30%;
     left: 60%;
@@ -4340,9 +4350,11 @@ ul.header-menu {
     width: 100%;
     padding: 20px 10px;
   }
-  .footer{
+
+  .footer {
     padding: 0;
   }
+
   .footer-column {
     min-width: 0;
     width: 100%;
