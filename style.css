@@ -836,8 +836,11 @@ ul.header-menu {
 @media (max-width: 480px) {
   .secand-1 h1 {
     font-size: 2.4rem;
+    
   }
-
+  .secand-1{
+    padding: 20px 10px 20px 10px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -847,7 +850,10 @@ ul.header-menu {
     align-items: center;
     justify-content: center;
   }
-
+  .secand-1{
+    padding: 20px 10px 20px 10px;
+  }
+  
   .secand-1 h1 {
     font-size: 3rem;
   }
