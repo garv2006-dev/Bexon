@@ -2301,7 +2301,7 @@ ul.header-menu {
     flex-direction: column;
     /* display: flex;*/
     align-items: flex-start;
-    text-align: justify;
+    /* text-align: justify; */
 
   }
 
