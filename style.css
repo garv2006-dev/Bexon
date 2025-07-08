@@ -839,7 +839,7 @@ ul.header-menu {
     
   }
   .secand-1{
-    padding: 20px 10px 20px 10px;
+    padding: 20px ;
   }
 }
 
@@ -851,9 +851,9 @@ ul.header-menu {
     justify-content: center;
   }
   .secand-1{
-    padding: 20px 10px 20px 10px;
+    padding: 20px;
   }
-  
+
   .secand-1 h1 {
     font-size: 3rem;
   }
